@@ -11,43 +11,43 @@
       "cart": []
     },
     {
-      "id": "7103",
+      "id": "9c97",
       "firstName": "amal",
       "lastName": "k",
       "email": "sample@gmail.com",
-      "password": "123",
+      "password": "123456",
       "number": "08475835890",
+      "role": "user",
+      "cart": []
+    },
+    {
+      "id": "9454",
+      "firstName": "Anandhu c",
+      "lastName": "c",
+      "email": "anandhuc166@gmail.com",
+      "password": "123456789",
+      "number": "09846597535",
       "role": "user",
       "cart": [
         {
-          "id": "3",
-          "BookName": "Flashlight",
-          "Auther": "Susan Choi",
-          "Price": "$120",
-          "language": "english",
-          "Content": "A thrilling, globe-spanning novel that mines questions of memory, language, identity and family",
-          "discription": " One evening, 10-year-old Louisa and her father take a walk out on the breakwater. They are spending the summer in a coastal Japanese town while her father Serk, a Korean émigré, completes an academic secondment from his American university. When Louisa wakes hours later, she has washed up on the beach and her father is missing, probably drowned. ",
-          "image": "https://thebookerprizes.com/sites/default/files/styles/2_3_media_huge/public/2025-07/Flashlight_Book%20Jacket_resized%20for%20web.jpg?itok=8vXFUJSR"
+          "id": " ",
+          "BookName": "THEEN PARUDEESA ",
+          "Auther": "KHALID JAWED ",
+          "Price": "$34 ",
+          "language": "malayalam",
+          "Content": "മനുഷ്യന്‍റെ അത്ഭുതകരമായ ആന്തരികലോകത്തെ തുറന്നുകാട്ടുന്ന, അത്യന്തം അസ്വസ്ഥമാക്കുന്ന, എന്നാൽ അത്രയേറെ മനോഹരവും ",
+          "discription": "മനുഷ്യന്‍റെ അത്ഭുതകരമായ ആന്തരികലോകത്തെ തുറന്നുകാട്ടുന്ന, അത്യന്തം അസ്വസ്ഥമാക്കുന്ന, എന്നാൽ അത്രയേറെ മനോഹരവും ആഴമേറിയതുമായ ഒരു സാഹിത്യസൃഷ്‌ടിയാണ് ഈ നോവല്‍. സങ്കീർണ്ണമായ ഒരു മധ്യവർഗ മുസ്ലീം കൂട്ടുകുടുംബത്തിലെ ഭക്ഷണത്തിന്‍റെ മണം നിറഞ്ഞ അകത്തളങ്ങളിൽ നിന്നാണ് ഈ കഥ പുരോഗമിക്കുന്നത്. ശിഥിലമാകുന്ന ഒരു കുടുംബപശ്ചാത്തലത്തിൽ, തന്‍റെ ബാല്യകാലം മുതൽ വാർദ്ധക്യം വരെ സ്വന്തം വീട്ടിലും പുറം ലോകത്തും അലഞ്ഞുതിരിയുന്ന, വൈരുദ്ധ്യങ്ങൾക്കിടയിൽ തനിക്കായി ഒരു ഇടം കണ്ടെത്താൻ പാടുപെടുന്ന നായകന്‍. അടുക്കളയുടെ ഇരുണ്ട കോണിൽ നിന്നും ഉയരുന്ന അയാളുടെ ആത്മഗാഥ. നിശബ്ദതയും ശ്വാസംമുട്ടലും നിറഞ്ഞ ഒരു ബാല്യത്തിലൂടെയും തെറ്റിദ്ധാരണയിൽ കെട്ടിപ്പടുത്ത ഒരു വിവാഹത്തിലൂടെയും അശാന്തി നിറഞ്ഞ ഒരു രാഷ്ട്രത്തിലൂടെയും അദ്ദേഹം സഞ്ചരിക്കുമ്പോൾ ആഖ്യാതാവിന്റെ ആന്തരികലോകം കൂടുതൽ വികലമാവുകയും അടുക്കളകൾ യുദ്ധക്കളങ്ങളായി തീരുകയും ചെയ്യുന്ന കാഴ്ച്ച കാണാം. ആഹാരമെന്ന ആശയം, വെറും വിഭവങ്ങളായോ രുചിയായോ മാത്രം ഇവിടെ നിലകൊള്ളുന്നില്ല, പകരം, അത് അസ്തിത്വത്തിന്റെയും",
+          "image": "https://dcbookstore.com/uploads/product/images/39638022867850-theen.JPG "
         },
         {
-          "id": "4",
-          "BookName": "Love Forms",
-          "Auther": "Claire Adam",
-          "Price": "$50",
+          "id": "6",
+          "BookName": "Heart Lamp",
+          "Auther": "Banu Mushtaq",
+          "Price": "$220",
           "language": "english",
-          "Content": "In this heart-aching novel, a mother searches for the daughter she left behind a lifetime ago",
-          "discription": " Trinidad, 1980: Dawn Bishop, aged 16, leaves her home and journeys across the sea to Venezuela. There, she gives birth to a baby girl, and leaves her with nuns to be given up for adoption.  Dawn tries to carry on with her life – a move to England, a marriage, a career, two sons, a divorce – but through it all, she still thinks of the child she had in Venezuela, and of what might have been.",
-          "image": "https://thebookerprizes.com/sites/default/files/styles/2_3_media_huge/public/2025-07/Love%20Forms_Book%20Jacket_resized%20for%20web.jpg?itok=qbyCWGFh"
-        },
-        {
-          "id": "3",
-          "BookName": "Flashlight",
-          "Auther": "Susan Choi",
-          "Price": "$120",
-          "language": "english",
-          "Content": "A thrilling, globe-spanning novel that mines questions of memory, language, identity and family",
-          "discription": " One evening, 10-year-old Louisa and her father take a walk out on the breakwater. They are spending the summer in a coastal Japanese town while her father Serk, a Korean émigré, completes an academic secondment from his American university. When Louisa wakes hours later, she has washed up on the beach and her father is missing, probably drowned. ",
-          "image": "https://thebookerprizes.com/sites/default/files/styles/2_3_media_huge/public/2025-07/Flashlight_Book%20Jacket_resized%20for%20web.jpg?itok=8vXFUJSR"
+          "Content": "An exhilarating, destabilising novel that asks whether we ever really know the people we love",
+          "discription": " ",
+          "image": "https://thebookerprizes.com/sites/default/files/styles/2_3_media_huge/public/2025-02/Heart%20Lamp_Book%20Jacket.jpg?itok=VYMwVfmQ"
         },
         {
           "id": "2",
@@ -60,24 +60,34 @@
           "image": "https://thebookerprizes.com/sites/default/files/styles/2_3_media_huge/public/2025-07/Seascraper_Book%20Jacket_resized%20for%20web.jpg?itok=JSfSpQWv"
         },
         {
-          "id": "2",
-          "BookName": "Seascraper",
-          "Auther": " Benjamin Wood",
-          "Price": "$17",
+          "id": "8",
+          "BookName": "Audition",
+          "Auther": "Katie Kitamura",
+          "Price": "$18",
           "language": "english",
-          "Content": "A mesmerising portrait of a young man confined by his class and the ghosts ",
-          "discription": " Thomas lives a slow, deliberate life with his mother in Longferry, working his grandpa’s trade as a shanker. He rises early to take his horse and cart to the grey, gloomy beach and scrape for shrimp, spending the afternoon selling his wares, trying to wash away the salt and scum, pining for Joan Wyath down the street, and rehearsing songs on his guitar. At heart, he is a folk musician, but it remains a private dream.  bringing the promise of Hollywood glamour, Thomas is shaken from the drudgery of his days and begins to see a different future. But how much of what the American claims is true, and how far can his inspiration carry Thomas?  ",
-          "image": "https://thebookerprizes.com/sites/default/files/styles/2_3_media_huge/public/2025-07/Seascraper_Book%20Jacket_resized%20for%20web.jpg?itok=JSfSpQWv"
+          "Content": "man who is unravelled by a series of events beyond his grasp",
+          "discription": " ",
+          "image": "https://thebookerprizes.com/sites/default/files/styles/2_3_media_huge/public/2025-07/Flesh_Book%20Jacket_resized%20for%20web.jpg?itok=epnWTzKl"
         },
         {
-          "id": "3",
-          "BookName": "Flashlight",
-          "Auther": "Susan Choi",
-          "Price": "$120",
+          "id": "13 ",
+          "language": "malayalam",
+          "BookName": "ENNODU PARAYU ",
+          "Auther": "BENYAMIN",
+          "Price": "$12 ",
+          "Content": " പുസ്‌തകങ്ങൾക്കുവേണ്ടി ഈ ഭൂമിയിൽ ജീവിച്ചു മടങ്ങിയ ഷെൽവിയുടെയും അയാളുടെ പ്രിയപ്പെട്ട എഴുത്തുകാരൻ കസാൻ സാകിസിന്റെയും കാലങ്ങളിലൂടെ",
+          "discription": " പുസ്‌തകങ്ങൾക്കുവേണ്ടി ഈ ഭൂമിയിൽ ജീവിച്ചു മടങ്ങിയ ഷെൽവിയുടെയും അയാളുടെ പ്രിയപ്പെട്ട എഴുത്തുകാരൻ കസാൻ സാകിസിന്റെയും കാലങ്ങളിലൂടെ, ഇരുവർക്കമിടയിലെ സമാന ലോകങ്ങളിലൂടെ, അവരുടെ ആഹ്ളാദങ്ങൾക്കും പ്രണയത്തിനും വേദനയ്ക്കുമൊപ്പം ബെന്യാമിൻ നടക്കുന്നു, ഒരു നോവലിസ്റ്റിന്റെ സർവ്വ സ്വാതന്ത്ര്യത്തോടെ. എഴുത്തിനും പുസ്തകങ്ങൾക്കും വേണ്ടി ജീവിതം ബലികൊടുത്തവരുടെയും സ്വയം നഷ്ടപ്പെട്ടവരുടെയും കഥകൾ പറയുന്ന ഈ നോവൽ മലയാളിയുടെ വായനാജീവിതത്തിന്റെ അടയാളപ്പെടുത്തൽ കൂടിയാണ്",
+          "image": "https://dcbookstore.com/uploads/product/images/93434237102978-WhatsApp-Image-2025-06-19-at-5.25.41-PM.jpeg "
+        },
+        {
+          "id": "11",
+          "BookName": " The Rest of Our Lives",
+          "Auther": "Ben Markovits ",
+          "Price": "$58 ",
           "language": "english",
-          "Content": "A thrilling, globe-spanning novel that mines questions of memory, language, identity and family",
-          "discription": " One evening, 10-year-old Louisa and her father take a walk out on the breakwater. They are spending the summer in a coastal Japanese town while her father Serk, a Korean émigré, completes an academic secondment from his American university. When Louisa wakes hours later, she has washed up on the beach and her father is missing, probably drowned. ",
-          "image": "https://thebookerprizes.com/sites/default/files/styles/2_3_media_huge/public/2025-07/Flashlight_Book%20Jacket_resized%20for%20web.jpg?itok=8vXFUJSR"
+          "Content": "An unforgettable road trip of a novel about getting older, and the challenges of long-term marriage",
+          "discription": "When Tom Layward’s wife had an affair, he resolved to leave her as soon as his youngest daughter turned 18. Twelve years later, while driving her to Pittsburgh to start university, he remembers his pact. He is also on the run from his own health issues, and the fact that he’s been put on leave at work after students complained about the politics of his law class – something he hasn’t yet told his wife.    ",
+          "image": "https://thebookerprizes.com/sites/default/files/styles/2_3_media_huge/public/2025-07/The%20Rest%20of%20Our%20Lives_Book%20Jacket.jpg?itok=e4hw8hr0 "
         }
       ]
     }

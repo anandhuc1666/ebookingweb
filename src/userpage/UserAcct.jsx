@@ -6,7 +6,6 @@ import axios from 'axios';
 
 function UserAcct() {
   const navigate = useNavigate();
-  const [count, setCount] = useState(0);
   const [user, setUser] = useState({});
   const [item, setItem] = useState([]);
 
@@ -30,18 +29,34 @@ function UserAcct() {
     }
   }, [user]);
 
-  const decrement = () => {
-    if (count > 0) setCount(count - 1);
-  };
-
-  const increment = () => {
-    if (count < 10) setCount(count + 1);
-  };
-
   const handleLogout = () => {
     localStorage.removeItem("user");
     navigate("/Login");
   };
+
+  const removeItem = async (productId) => {
+  try {
+    // Remove from state
+    const updatedCart = item.filter(c => c.id !== productId);
+    setItem(updatedCart);
+
+    // Update user cart in JSON server
+    await axios.patch(`http://localhost:5000/users/${user.id}`, {
+      cart: updatedCart
+    });
+
+    // Also update localStorage so UI stays in sync after reload
+    const updatedUser = { ...user, cart: updatedCart };
+    localStorage.setItem("user", JSON.stringify(updatedUser));
+    setUser(updatedUser);
+  } catch (err) {
+    console.error("Error removing item:", err);
+  }
+};
+
+
+
+
 
   return (
     <div className="UserAcct">
@@ -71,8 +86,7 @@ function UserAcct() {
                   <h5>Language: {filter.language}</h5>
                   <p>price: {filter.Price}</p>
                 </div>
-
-
+<button onClick={() => removeItem(filter.id)}>Remove</button>
                 <div className="div-prodect-count-price">
                   <h1>{filter.Price}</h1>
                   <br />

@@ -1,0 +1,60 @@
+.Cart{
+    width: 100%;
+    background-color: #eee;
+    height: auto;
+    padding: 50px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+.Cart-list{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    gap: 10px;
+}
+.prodect-cart-list{
+    width: 100%;
+    flex-wrap: wrap;
+    background-color: #eee;
+    margin-top: 10px;
+    display: flex;
+    border-bottom-style: solid;
+
+}
+.Book-Cart-name{
+    width: 200px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: left;
+    margin-left: 50px;
+}
+/*  the 2nd box list of small list of books  */
+.prodect-cart-lists-books{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.prodect-cart-lists{
+    width: 300px;
+    height: 150px;
+    background-color: #eee;
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+.Book-Cart-names{
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+
+}
+.Book-Cart-names h4{
+  text-align: center;
+}

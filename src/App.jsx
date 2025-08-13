@@ -7,6 +7,7 @@ import Home from './Home'
 import Content from './content/Content'
 import UserAcct from './userpage/UserAcct'
 import Product from './userpage/Product'
+import Cart from './userpage/Cart'
 
 function App() {
 const[nav,setNav]=useState(true)
@@ -33,6 +34,7 @@ useEffect(()=>{
   <Route path='/Signup' element={<Signup/>}/>
   <Route path='/UserAcct' element={<UserAcct/>}/>
   <Route path='Product' element={<Product/>}/>
+  <Route path='/Cart' element={<Cart/>}/>
 </Routes>
     </div>
   )

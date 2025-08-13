@@ -16,7 +16,7 @@ function Nav() {
           <Link to={'/'} style={{ textDecoration: "none" }}><li className='nav-li'>About</li></Link>
         </ul>
         <div className="box-cart-favo">
-          <img src="https://cdn-icons-png.flaticon.com/512/107/107831.png" alt="addtocart" className="icon-cart" style={{ background: 'none' }}/>
+          <Link to={'/Cart'}> <img src="https://cdn-icons-png.flaticon.com/512/107/107831.png" alt="addtocart" className="icon-cart" style={{ background: 'none' }}/></Link>
           <img src="https://cdn-icons-png.flaticon.com/512/833/833472.png" alt="favorite" className="icon-favorite" style={{ filter: 'brightness(0) saturate(100%) invert(0)' }} />
           <Link to={'/UserAcct'}><img alt=""/><RiAccountCircleFill size={25} color='#000'/></Link>
         </div>
