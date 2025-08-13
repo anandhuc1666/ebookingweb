@@ -1,0 +1,123 @@
+.UserAcct {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    padding: 50px;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.userarea {
+    width: 400px;
+    height: 100vh;
+    text-align: center;
+    padding: 30px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.user-acct {
+    width: 100%;
+    height: 400px;
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.user-logout{
+    width: 80px;
+     height: 40px;
+     font-size: 20px;
+     border-radius: 10px;
+     color: #eee;
+     background-color: #0f0e0e;
+     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.user-logout:hover{
+    background-color: #412f2f;
+
+}
+.UserProdect-area {
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+
+}
+
+.UserProdect {
+    width: 100%;
+    height: 78vh;
+    background-color: #eee;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    border-radius: 30px 30px 0 0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.UserProdect::-webkit-scrollbar {
+    display: none;
+}
+
+.prodect-list {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+
+}
+
+.div-prodect-count {
+    display: flex;
+    width: 100px;
+    height: 30px;
+    justify-content: center;
+    background-color: #eee;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    border-radius: 20px;
+}
+.but-count {
+    width: 50px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    color: #000000;
+    background: none;
+}
+
+.div-prodect-count-price {
+    margin-left: 400px;
+    color: #000000;
+}
+
+.div-prodect-count-price-but {
+    width: 80px;
+    height: 40px;
+    background-color: orange;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+}
+
+.under-line {
+    width: 90%;
+    height: 2px;
+    background-color: #000000;
+    margin-left: 50px;
+}
