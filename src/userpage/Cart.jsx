@@ -6,22 +6,23 @@ import axios from 'axios'
 
 function Cart() {
 
-    const [prodectcart, setprodectcart] = useState([])
+   const [cart, setCart] = useState([])
     const[prodata,setProdata]=useState([])
 
     const user = JSON.parse(localStorage.getItem("user"));
     useEffect(() => {
-        try {
-            axios.get(`http://localhost:5000/users/${user.id}`)
-                .then(result => {
-                    setprodectcart(result.data.cart)
-                    console.log(result.data.cart)
-
-                })
-        } catch (error) {
-            console.log(error)
+        if(user && user.id){
+            calldata()
         }
-    }, [])
+    }, [user.id])
+    const calldata =()=>{
+         axios.get("http://localhost:5000/carts")
+         .then((res)=>setCart(res.data))
+         .catch(err=> console.log('carts not get data 404',err))
+    }
+    const removeItem=(id)=>{
+        axios.delete(`http://localhost:5000/carts/${id}`)
+    }
     return (
         <div className='Cart'>
             <div className="Cart-list">
@@ -35,10 +36,22 @@ function Cart() {
                         <h2 style={{color:'red'}}><strong style={{color:'black'}}>Price: </strong> {prodata.Price}</h2>
                         <p> <strong>Language:</strong> {prodata.language}</p>
                     </div>
+                    <div className="user-revew" style={{marginLeft:50,padding:20}}>
+                        <h5>{prodata.s}  ⭐ <br/> </h5>
+                        <p>Scrore</p><br />
+                        <h4>{prodata.c} 👤 </h4>
+                        <p>Customer</p>
+                    </div>
+                    <div className="cart-buy">
+                            
+                             <button style={{width:100,height:40}} onClick={() => removeItem(e.id)}>REMOVE</button>
+                              <button style={{width:100,height:40,backgroundColor:'orange'}}>BUY</button>
+                    </div>
+                   
                 </div>
                 <div className="prodect-cart-lists-books">
                     {
-                        prodectcart && [...prodectcart].map((find) => (
+                        cart.map((find) => (
                             <div className="prodect-cart-lists" key={find.id}>
                                 <img src={find.image} alt="" style={{ width: 100 }} onClick={()=>setProdata(find)}/>
                             <div className="Book-Cart-names">

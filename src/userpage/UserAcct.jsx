@@ -86,7 +86,7 @@ function UserAcct() {
                   <h5>Language: {filter.language}</h5>
                   <p>price: {filter.Price}</p>
                 </div>
-<button onClick={() => removeItem(filter.id)}>Remove</button>
+                 <button onClick={() => removeItem(filter.id)}>Remove</button>
                 <div className="div-prodect-count-price">
                   <h1>{filter.Price}</h1>
                   <br />

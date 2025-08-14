@@ -10,8 +10,32 @@ import { useNavigate } from "react-router-dom";
 function Content() {
   const [data, setState] = useState([]);
   const [search, setSearch] = useState("");
-  const [language, setLanguage] = useState("all"); // ✅ New language filter
-  const [favorites, setFavorites] = useState({});
+  const [language, setLanguage] = useState("all"); 
+  
+  const fav = (fil) => {
+  let user = JSON.parse(localStorage.getItem("user") || "{}");
+  let userid = user.id;
+
+  if (!userid) {
+    alert("Please log in first");
+    return;
+  }
+
+  // Check if this book is already in favorites for this user
+  axios.get(`http://localhost:5000/fav?userid=${userid}&id=${fil.id}`)
+    .then((res) => {
+      if (res.data.length > 0) {
+        alert("Already in favorites");
+      } else {
+        axios.post("http://localhost:5000/fav", { ...fil, userid })
+          .then(() => alert("Added to favorites"))
+          .catch(err => console.log("Error adding favorite", err));
+      }
+    })
+    .catch(err => console.log("Error checking favorites", err));
+};
+
+   
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -20,14 +44,6 @@ function Content() {
       .catch((err) => console.log("server 404", err));
   }, []);
 
-  const toggleFavorite = (id) => {
-    setFavorites((prev) => ({
-      ...prev,
-      [id]: !prev[id]
-    }));
-  };
-
-  // ✅ Filtering by search and language
   const filteredData = data.filter((fil) => {
     const matchesSearch = fil.BookName.toLowerCase().includes(search.toLowerCase());
     const matchesLanguage = language === "all" || fil.Language?.toLowerCase() === language.toLowerCase();
@@ -81,16 +97,13 @@ function Content() {
               alt="favorite"
               className="icon-favorite"
               style={{
-                filter: favorites[index]
-                  ? "brightness(0) saturate(100%) invert(18%) sepia(94%) saturate(7487%) hue-rotate(357deg) brightness(93%) contrast(120%)"
-                  : "brightness(0) saturate(100%) invert(0)",
                 width: 20,
                 height: 20,
                 position: "absolute",
                 margin: -20,
                 marginLeft: 130
               }}
-              onClick={() => toggleFavorite(index)}
+              onClick={()=>fav(fil)}
             />
 
             <img

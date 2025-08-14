@@ -33,11 +33,6 @@ function Signup() {
       console.error(error);
       alert("Failed to register");
     }
-    // axios.post("http://localhost:5000/users", form).then((data)=>{
-    //     console.log(data)
-    // }).catch((e)=>{
-    //     console.log(e)
-    // })
   };
 
   return (

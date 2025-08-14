@@ -58,3 +58,10 @@
 .Book-Cart-names h4{
   text-align: center;
 }
+.cart-buy{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40%;
+    gap: 10px;
+    margin-top: 10px;
+}
