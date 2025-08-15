@@ -34,28 +34,6 @@ function UserAcct() {
     navigate("/Login");
   };
 
-  const removeItem = async (productId) => {
-  try {
-    // Remove from state
-    const updatedCart = item.filter(c => c.id !== productId);
-    setItem(updatedCart);
-
-    // Update user cart in JSON server
-    await axios.patch(`http://localhost:5000/users/${user.id}`, {
-      cart: updatedCart
-    });
-
-    // Also update localStorage so UI stays in sync after reload
-    const updatedUser = { ...user, cart: updatedCart };
-    localStorage.setItem("user", JSON.stringify(updatedUser));
-    setUser(updatedUser);
-  } catch (err) {
-    console.error("Error removing item:", err);
-  }
-};
-
-
-
 
 
   return (

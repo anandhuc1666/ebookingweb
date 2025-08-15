@@ -11,6 +11,7 @@ import Cart from './userpage/Cart'
 import About from './About'
 import Orders from './Orders'
 import Fav from './userpage/Fav'
+import Check from './Check'
 
 function App() {
 const[nav,setNav]=useState(true)
@@ -36,11 +37,12 @@ useEffect(()=>{
   <Route path='/Login' element={<Login/>}/>
   <Route path='/Signup' element={<Signup/>}/>
   <Route path='/UserAcct' element={<UserAcct/>}/>
-  <Route path='Product' element={<Product/>}/>
+  <Route path='/Books/:Product' element={<Product/>}/>
   <Route path='/Cart' element={<Cart/>}/>
   <Route path='/About' element={<About/>}/>
   <Route path='/Orders' element={<Orders/>}/>
   <Route path='/Fav' element={<Fav/>}/>
+  <Route path='/Login/:Check' element={<Check/>}/>
 </Routes>
     </div>
   )

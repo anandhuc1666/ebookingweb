@@ -11,8 +11,7 @@ function Signup() {
     email: "",
     password: "",
     number: "",
-    role: "user",
-    cart: []
+    role: "user"
   });
 
   const handleChange = (e) =>

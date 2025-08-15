@@ -5,13 +5,13 @@ import booksbold from './booksbold.svg'
 import bookshelf from './bookshelf.svg'
 import Product from '../userpage/Product'
 
-import { useNavigate } from "react-router-dom";
+import { useNavigate,Link } from "react-router-dom";
 
 function Content() {
   const [data, setState] = useState([]);
   const [search, setSearch] = useState("");
   const [language, setLanguage] = useState("all"); 
-  
+
   const fav = (fil) => {
   let user = JSON.parse(localStorage.getItem("user") || "{}");
   let userid = user.id;
@@ -50,9 +50,6 @@ function Content() {
     return matchesSearch && matchesLanguage;
   });
 
-  const handleViewMore = (Product) => {
-    navigate("/Product", { state: { Product } });
-  };
 
   return (
     <div className="Content-box">
@@ -110,22 +107,13 @@ function Content() {
               src={fil.image}
               alt=""
               style={{ width: 150, height: 200, borderRadius: 10 }}
-              onClick={() => handleViewMore(fil)}
             />
             <h3 style={{ fontSize: 20 }}>{fil.BookName.toLowerCase()}</h3>
             <h4>{fil.Language}</h4>
             <h2>{fil.Price}</h2>
-            <button
-              style={{
-                background: '#0f0e0e',
-                color: '#fff',
-                padding: 5,
-                borderRadius: 20
-              }}
-              onClick={() => handleViewMore(fil)}
-            >
-              VIEW MORE
-            </button>
+           
+            <Link to={`/Books/${fil.id}`}><button style={{background: '#0f0e0e',color: '#fff',padding: 5,borderRadius: 20}}>   VIEW MORE</button></Link>
+           
           </div>
         ))}
       </div>

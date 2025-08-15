@@ -3,37 +3,53 @@ import './Fav.css';
 import axios from 'axios';
 
 function Fav() {
-  const [fav, setFav] = useState([]);
-  const user = JSON.parse(localStorage.getItem("user"));
+ const [fav, setFav] = useState([]);
+  const user = JSON.parse(localStorage.getItem("user") || "{}");
 
   useEffect(() => {
     if (user && user.id) {
-      calldata()
+      fetchFav();
     }
   }, [user.id]);
-  const calldata = () => {
+
+  const fetchFav = () => {
     axios.get("http://localhost:5000/fav")
       .then((res) => setFav(res.data))
       .catch(err => console.log('fav 404', err));
-  }
+  };
+
   const removeItem = (id) => {
     axios.delete(`http://localhost:5000/fav/${id}`)
-      .then(
-        calldata()
-      )
-      .catch(err => console.log('fav 404', err));
+      .then(() => {
+        fetchFav();
+        alert('Removed from favorites 🤥');
+      })
+      .catch(err => console.log('fav delete error', err));
   };
-  const addCart = (add) => {
-    console.log()
-    // axios.post(`http://localhost:5000/users/cart${add}`)
-    axios.post(`http://localhost:5000/carts`,add)
-    .then(
-          calldata()
-    )
-    .catch(err=> console.log('not add 404',err))
-  }
 
 
+ 
+  
+
+  // const addCart = (item) => {
+  //   axios.get(`http://localhost:5000/carts?userid=${user.id}&bookId=${item.id}`)
+  //     .then((res) => {
+  //       if (res.data.length > 0) {
+  //         console.log(res)                        //if state ment have the issues on i find it...
+  //         alert('Already in your cart');
+  //       } else {
+  //         axios.post("http://localhost:5000/carts", { ...item, userid: user.id })
+  //           .then(() => alert("Added to cart"))
+  //           .catch(err => console.log('cart post error', err));
+  //       }
+  //     })
+  //     .catch(err => console.log('cart check error', err));
+  // };
+const addCart = (item) => {
+    axios.post("http://localhost:5000/carts", { ...item, userid: user.id })
+            .then(() => alert("Added to cart"))
+            .catch(err => console.log('cart post error', err));
+ };
   return (
     <div className='Fav'>
       <div className="Fav-data">
